@@ -12,5 +12,8 @@ class IconPath{
   static const timeline = "assets/icons/icon_timeline.png";
   static const notification = "assets/icons/icon_notification.png";
 
+  static const dot = "assets/icons/icon_dot.png";
+  static const dot1 = "assets/icons/icon_dot1.png";
+
 }
 
