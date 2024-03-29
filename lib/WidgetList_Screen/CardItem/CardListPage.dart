@@ -1,37 +1,18 @@
-// import 'package:flutter/material.dart';
-//
-// class WidgetListPage extends StatefulWidget {
-//   const WidgetListPage({super.key});
-//
-//   @override
-//   State<WidgetListPage> createState() => _WidgetListPageState();
-// }
-//
-// class _WidgetListPageState extends State<WidgetListPage> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return const Placeholder();
-//   }
-// }
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import '../../../Constants/ImagePath.dart';
-import '../../../Routes/Routes.dart';
+import '../../Routes/Routes.dart';
 
-
-
-class AnimatedListPage extends StatelessWidget {
+class CardListPage extends StatelessWidget {
   String title;
-  AnimatedListPage({super.key,this.title = 'List View'});
+  CardListPage({super.key,this.title = 'Cards Widget'});
 
   List listData = [
-    "Animated List 1",
-    "Animated List 2",
-    "Animated List 3",
-    "Animated List 4",
-    "Animated List 5",
-    "Animated List 6",
+    "Standart Card",
+    "Border Radius Card",
+    "Elevation Card",
+    "Shadow Color Card"
   ];
 
   @override
@@ -55,22 +36,16 @@ class AnimatedListPage extends StatelessWidget {
                       onTap: () {
                         switch(index){
                           case 0:
-                            Get.toNamed(Routes.animatedlist1);
+                            Get.toNamed(Routes.standartcardpage);
                             break;
                           case 1:
-                            Get.toNamed(Routes.animatedlist2);
+                            Get.toNamed(Routes.borderradiuscardpage);
                             break;
                           case 2:
-                            Get.toNamed(Routes.animatedlist3);
+                            Get.toNamed(Routes.elevationcardpage);
                             break;
                           case 3:
-                            Get.toNamed(Routes.animatedlist4);
-                            break;
-                          case 4:
-                            Get.toNamed(Routes.animatedlist5);
-                            break;
-                          case 5:
-                            Get.toNamed(Routes.animatedlist6);
+                            Get.toNamed(Routes.shadowcolorcardpage);
                             break;
                         }
                       },

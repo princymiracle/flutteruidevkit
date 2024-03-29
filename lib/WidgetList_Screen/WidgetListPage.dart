@@ -1,18 +1,3 @@
-// import 'package:flutter/material.dart';
-//
-// class WidgetListPage extends StatefulWidget {
-//   const WidgetListPage({super.key});
-//
-//   @override
-//   State<WidgetListPage> createState() => _WidgetListPageState();
-// }
-//
-// class _WidgetListPageState extends State<WidgetListPage> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return const Placeholder();
-//   }
-// }
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
@@ -22,7 +7,7 @@ import '../Routes/Routes.dart';
 
 class WidgetListPage extends StatelessWidget {
   String title;
-  WidgetListPage({super.key,this.title = 'List View'});
+  WidgetListPage({super.key,this.title = 'Animation'});
 
   List listData = [
     "Animated Cross Fade",
@@ -30,6 +15,11 @@ class WidgetListPage extends StatelessWidget {
     "Animated List",
     "Animated Opacity",
     "Animated Physical Model",
+    "Animated Size",
+    "Animated Widget",
+    "Aspect Ratio",
+    "Card Widget",
+    "DecoratedBox Transition",
   ];
 
   @override
@@ -59,13 +49,28 @@ class WidgetListPage extends StatelessWidget {
                             Get.toNamed(Routes.animateddefaulttextstyle);
                             break;
                           case 2:
-                            Get.toNamed(Routes.animatedlistpage);
+                            Get.toNamed(Routes.animatedlist);
                             break;
                           case 3:
                             Get.toNamed(Routes.animatedopacity);
                             break;
                           case 4:
                             Get.toNamed(Routes.animatedephysicalmodel);
+                            break;
+                          case 5:
+                            Get.toNamed(Routes.animatedsizepage);
+                            break;
+                          case 6:
+                            Get.toNamed(Routes.animatedwidgetpage);
+                            break;
+                          case 7:
+                            Get.toNamed(Routes.aspectratiopage);
+                            break;
+                          case 8:
+                            Get.toNamed(Routes.cardlistpage);
+                            break;
+                          case 9:
+                            Get.toNamed(Routes.decoratedboxtransitionpage);
                             break;
                         }
                       },

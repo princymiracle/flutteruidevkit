@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../../Constants/ImagePath.dart';
+import '../../Constants/ImagePath.dart';
 
-class AnimatedListPage1 extends StatefulWidget {
+class AnimatedListPage extends StatefulWidget {
   String title;
-  AnimatedListPage1({super.key,this.title = 'Animated List'});
+  AnimatedListPage({super.key,this.title = 'Animated List'});
 
   @override
-  State<AnimatedListPage1> createState() => _AnimatedListPage1State();
+  State<AnimatedListPage> createState() => _AnimatedListPageState();
 }
 
-class _AnimatedListPage1State extends State<AnimatedListPage1> {
+class _AnimatedListPageState extends State<AnimatedListPage> {
 
   final _items = [];
   final GlobalKey<AnimatedListState> _key = GlobalKey();

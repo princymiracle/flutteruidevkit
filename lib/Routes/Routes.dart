@@ -24,14 +24,22 @@ class Routes{
 
   static const animateddefaulttextstyle = '/animateddefaulttextstyle';
 
-  static const animatedlistpage = '/animatedlistpage';
-  static const animatedlist1 = '/animatedlist1';
-  static const animatedlist2 = '/animatedlist2';
-  static const animatedlist3 = '/animatedlist3';
-  static const animatedlist4 = '/animatedlist4';
-  static const animatedlist5 = '/animatedlist5';
-  static const animatedlist6 = '/animatedlist6';
+  static const animatedlist = '/animatedlist';
 
   static const animatedopacity = '/animatedopacity';
   static const animatedephysicalmodel = '/animatedephysicalmodel';
+
+  static const animatedsizepage = '/animatedsizepage';
+
+  static const animatedwidgetpage = '/animatedwidgetpage';
+
+  static const aspectratiopage = '/aspectratiopage';
+
+  static const cardlistpage = '/cardlistpage';
+  static const standartcardpage = '/standartcardpage';
+  static const borderradiuscardpage = '/borderradiuscardpage';
+  static const elevationcardpage = '/elevationcardpage';
+  static const shadowcolorcardpage = '/shadowcolorcardpage';
+
+  static const decoratedboxtransitionpage = '/decoratedboxtransitionpage';
 }

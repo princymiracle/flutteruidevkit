@@ -113,7 +113,7 @@ class _AnimatedCrossFadePage2State extends State<AnimatedCrossFadePage2> {
                         Container(
                           margin: EdgeInsets.all(16.0),
                           width: double.infinity,
-                          height: 100,
+                          height: 50,
                           color: Colors.grey,
                         ),
                       ],

@@ -16,6 +16,7 @@ class AnimatedPhysicalPage extends StatefulWidget {
 
 class _AnimatedPhysicalPageState extends State<AnimatedPhysicalPage> {
 
+  bool _isFlat = true;
 
   @override
   Widget build(BuildContext context) {
@@ -40,6 +41,37 @@ class _AnimatedPhysicalPageState extends State<AnimatedPhysicalPage> {
                   SizedBox(height: 1.h,),
                   Text("Example :-"),
                   SizedBox(height: 3.h,),
+                 Center(
+                   child: Column(
+                     children: [
+                       AnimatedPhysicalModel(
+                         duration: Duration(milliseconds: 1500),
+                           shape: BoxShape.rectangle,
+                           color: _isFlat ? Colors.white : Colors.white,
+                         elevation: _isFlat ? 0 : 40,
+                         borderRadius: _isFlat ? BorderRadius.circular(0) : BorderRadius.circular(30),
+                         shadowColor: Colors.black,
+                         child: Container(
+                           height: 20.h,
+                           width: 40.w,
+                           child: FlutterLogo(
+                             size: 15,
+                           ),
+                         ),
+                       ),
+                       SizedBox(height: 4.h,),
+                       ElevatedButton(
+                           style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(Colors.orangeAccent )),
+                           onPressed: () {
+                            setState(() {
+                              _isFlat = !_isFlat;
+                            });
+                           },
+                           child: Text("Change",style: TextStyle(color: Colors.black),)
+                       ),
+                     ],
+                   ),
+                 ),
                 ],
               ),
             ),
@@ -49,3 +81,4 @@ class _AnimatedPhysicalPageState extends State<AnimatedPhysicalPage> {
     );
   }
 }
+

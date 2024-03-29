@@ -14,19 +14,22 @@ import '../Screen/ScreenList/SignIn.dart';
 import '../Screen/ScreenList/SignUp.dart';
 import '../Screen/ScreenList/User.dart';
 import '../Screen/ScreenList/UserProfile.dart';
-import '../WidgetList_Screen/AnimatedItem/Animated List/AnimatedListPage.dart';
-import '../WidgetList_Screen/AnimatedItem/Animated List/AnimatedListPage2.dart';
-import '../WidgetList_Screen/AnimatedItem/Animated List/AnimatedListPage3.dart';
-import '../WidgetList_Screen/AnimatedItem/Animated List/AnimatedListPage4.dart';
-import '../WidgetList_Screen/AnimatedItem/Animated List/AnimatedListPage5.dart';
-import '../WidgetList_Screen/AnimatedItem/Animated List/AnimatedListPage6.dart';
 import '../WidgetList_Screen/AnimatedItem/AnimatedCrossFade/AnimatedCrossFade.dart';
 import '../WidgetList_Screen/AnimatedItem/AnimatedCrossFade/AnimatedCrossFade2.dart';
 import '../WidgetList_Screen/AnimatedItem/AnimatedCrossFade/AnimatedCrossFadeListPage.dart';
-import '../WidgetList_Screen/AnimatedItem/Animated List/AnimatedList1.dart';
+import '../WidgetList_Screen/AnimatedItem/AnimatedList.dart';
 import '../WidgetList_Screen/AnimatedItem/AnimatedPhysicalModel.dart';
+import '../WidgetList_Screen/AnimatedItem/AnimatedSize.dart';
+import '../WidgetList_Screen/AnimatedItem/AnimatedWidget.dart';
 import '../WidgetList_Screen/AnimatedItem/AnimateddeFaultTextstyle.dart';
 import '../WidgetList_Screen/AnimatedItem/AnimatedOpacity.dart';
+import '../WidgetList_Screen/AspectRatioItem/AspectRatio.dart';
+import '../WidgetList_Screen/CardItem/BorderRadiusCard.dart';
+import '../WidgetList_Screen/CardItem/CardListPage.dart';
+import '../WidgetList_Screen/CardItem/ElevationCard.dart';
+import '../WidgetList_Screen/CardItem/ShadowColorCard.dart';
+import '../WidgetList_Screen/CardItem/StandartCard.dart';
+import '../WidgetList_Screen/DecoratedBoxTransition/DecoratedBoxTransitionPage.dart';
 import '../WidgetList_Screen/WidgetListPage.dart';
 import 'Routes.dart';
 
@@ -57,15 +60,23 @@ class Screens {
 
     GetPage(name: Routes.animateddefaulttextstyle, page: () => AnimatedDefaultPage(),),
 
-    GetPage(name: Routes.animatedlistpage, page: () => AnimatedListPage(),),
-    GetPage(name: Routes.animatedlist1, page: () => AnimatedListPage1(),),
-    GetPage(name: Routes.animatedlist2, page: () => AnimatedListPage2(),),
-    GetPage(name: Routes.animatedlist3, page: () => AnimatedListPage3(),),
-    GetPage(name: Routes.animatedlist4, page: () => AnimatedListPage4(),),
-    GetPage(name: Routes.animatedlist5, page: () => AnimatedListPage5(),),
-    GetPage(name: Routes.animatedlist6, page: () => AnimatedListPage6(),),
+    GetPage(name: Routes.animatedlist, page: () => AnimatedListPage(),),
 
     GetPage(name: Routes.animatedopacity, page: () => AnimatedOpacityPage(),),
-    GetPage(name: Routes.animatedephysicalmodel, page: () => AnimatedPhysicalPage(),),
+    GetPage(name: Routes.animatedephysicalmodel, page: () => AnimatedPhysicalPage(),)
+    ,
+    GetPage(name: Routes.animatedsizepage, page: () => AnimatedSizePage(),),
+
+    GetPage(name: Routes.animatedwidgetpage, page: () => AnimatedWidgetPage(),),
+
+    GetPage(name: Routes.aspectratiopage, page: () => AspectRatioPage(),),
+
+    GetPage(name: Routes.cardlistpage, page: () => CardListPage(),),
+    GetPage(name: Routes.standartcardpage, page: () => StandartCardPage(),),
+    GetPage(name: Routes.borderradiuscardpage, page: () => BorderRadiusCardPage(),),
+    GetPage(name: Routes.elevationcardpage, page: () => ElevationCardPage(),),
+    GetPage(name: Routes.shadowcolorcardpage, page: () => ShadowColorCardPage(),),
+
+    GetPage(name: Routes.decoratedboxtransitionpage, page: () => DecoratedBoxTransitionPage(),),
   ];
 }
