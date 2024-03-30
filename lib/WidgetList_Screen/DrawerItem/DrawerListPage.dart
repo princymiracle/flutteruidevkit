@@ -2,28 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import '../../../Constants/ImagePath.dart';
-import '../Routes/Routes.dart';
+import '../../Routes/Routes.dart';
 
-class WidgetListPage extends StatelessWidget {
+class DrawerListPage extends StatelessWidget {
   String title;
-  WidgetListPage({super.key,this.title = 'Widget'});
+  DrawerListPage({super.key,this.title = 'Drawer Widget'});
 
   List listData = [
-    "Animated Cross Fade",
-    "Animateddefault Textstyle",
-    "Animated List",
-    "Animated Opacity",
-    "Animated Physical Model",
-    "Animated Size",
-    "Animated Widget",
-    "Aspect Ratio",
-    "Card Widget",
-    "DecoratedBox Transition",
-    "Data Table",
-    "Dismissible",
-    "Drawer Widget",
-    "Animated Rotation Transition",
-    "Hero Widget",
+    "Standart Drawer",
+    "Drawer at the right",
+    "Drawer Custom Header",
+    "Drawer Custom Shape",
   ];
 
   @override
@@ -47,49 +36,16 @@ class WidgetListPage extends StatelessWidget {
                       onTap: () {
                         switch(index){
                           case 0:
-                            Get.toNamed(Routes.acrosslistpage);
+                            Get.toNamed(Routes.standartdrawerpage);
                             break;
                           case 1:
-                            Get.toNamed(Routes.animateddefaulttextstyle);
+                            Get.toNamed(Routes.drawerrightpage);
                             break;
                           case 2:
-                            Get.toNamed(Routes.animatedlist);
+                            Get.toNamed(Routes.drawercustomheaderpage);
                             break;
                           case 3:
-                            Get.toNamed(Routes.animatedopacity);
-                            break;
-                          case 4:
-                            Get.toNamed(Routes.animatedephysicalmodel);
-                            break;
-                          case 5:
-                            Get.toNamed(Routes.animatedsizepage);
-                            break;
-                          case 6:
-                            Get.toNamed(Routes.animatedwidgetpage);
-                            break;
-                          case 7:
-                            Get.toNamed(Routes.aspectratiopage);
-                            break;
-                          case 8:
-                            Get.toNamed(Routes.cardlistpage);
-                            break;
-                          case 9:
-                            Get.toNamed(Routes.decoratedboxtransitionpage);
-                            break;
-                          case 10:
-                            Get.toNamed(Routes.datatablepage);
-                            break;
-                          case 11:
-                            Get.toNamed(Routes.dismissiblelistpage);
-                            break;
-                          case 12:
-                            Get.toNamed(Routes.drawerlistpage);
-                            break;
-                          case 13:
-                            Get.toNamed(Routes.rotationtransitionpage);
-                            break;
-                          case 14:
-                            Get.toNamed(Routes.herowidgetpage);
+                            Get.toNamed(Routes.drawercustomshapepage);
                             break;
                         }
                       },
@@ -114,4 +70,3 @@ class WidgetListPage extends StatelessWidget {
     );
   }
 }
- // 39 40 42 43 46 48 51 52 53 54 56 57 61 62

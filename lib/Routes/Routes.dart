@@ -42,4 +42,20 @@ class Routes{
   static const shadowcolorcardpage = '/shadowcolorcardpage';
 
   static const decoratedboxtransitionpage = '/decoratedboxtransitionpage';
+
+  static const datatablepage = '/datatablepage';
+
+  static const dismissiblelistpage = '/dismissiblelistpage';
+  static const dismissiblestandartpage = '/dismissiblestandartpage';
+  static const dismissiblepropertiespage = '/dismissiblepropertiespage';
+
+  static const drawerlistpage = '/drawerlistpage';
+  static const standartdrawerpage = '/standartdrawerpage';
+  static const drawerrightpage = '/drawerrightpage';
+  static const drawercustomheaderpage = '/drawercustomheaderpage';
+  static const drawercustomshapepage = '/drawercustomshapepage';
+
+  static const rotationtransitionpage = '/rotationtransitionpage';
+
+  static const herowidgetpage = '/herowidgetpage';
 }

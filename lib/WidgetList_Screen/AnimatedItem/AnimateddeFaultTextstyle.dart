@@ -43,7 +43,7 @@ class _AnimatedDefaultPageState extends State<AnimatedDefaultPage> {
                     SizedBox(height: 3.h,),
                     Container(
                       child: SizedBox(
-                        height: 10.h,
+                        height: 15.h,
                         child: AnimatedDefaultTextStyle(
                           duration: Duration(milliseconds: 300),
                           style: TextStyle(

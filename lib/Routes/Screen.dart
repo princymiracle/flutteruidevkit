@@ -19,6 +19,7 @@ import '../WidgetList_Screen/AnimatedItem/AnimatedCrossFade/AnimatedCrossFade2.d
 import '../WidgetList_Screen/AnimatedItem/AnimatedCrossFade/AnimatedCrossFadeListPage.dart';
 import '../WidgetList_Screen/AnimatedItem/AnimatedList.dart';
 import '../WidgetList_Screen/AnimatedItem/AnimatedPhysicalModel.dart';
+import '../WidgetList_Screen/RotationTransition/RotationTransitionPage.dart';
 import '../WidgetList_Screen/AnimatedItem/AnimatedSize.dart';
 import '../WidgetList_Screen/AnimatedItem/AnimatedWidget.dart';
 import '../WidgetList_Screen/AnimatedItem/AnimateddeFaultTextstyle.dart';
@@ -29,7 +30,17 @@ import '../WidgetList_Screen/CardItem/CardListPage.dart';
 import '../WidgetList_Screen/CardItem/ElevationCard.dart';
 import '../WidgetList_Screen/CardItem/ShadowColorCard.dart';
 import '../WidgetList_Screen/CardItem/StandartCard.dart';
+import '../WidgetList_Screen/DataTable/DataTableWidget.dart';
 import '../WidgetList_Screen/DecoratedBoxTransition/DecoratedBoxTransitionPage.dart';
+import '../WidgetList_Screen/Dismissible/DismissibleListPage.dart';
+import '../WidgetList_Screen/Dismissible/DismissiblePropertiesPage.dart';
+import '../WidgetList_Screen/Dismissible/DismissibleStandartPage.dart';
+import '../WidgetList_Screen/DrawerItem/DrawerCustomHeaderPage.dart';
+import '../WidgetList_Screen/DrawerItem/DrawerCustomShapePage.dart';
+import '../WidgetList_Screen/DrawerItem/DrawerListPage.dart';
+import '../WidgetList_Screen/DrawerItem/DrawerRight.dart';
+import '../WidgetList_Screen/DrawerItem/StandartDrawerPage.dart';
+import '../WidgetList_Screen/HeroWidget/HeroWidgetPage.dart';
 import '../WidgetList_Screen/WidgetListPage.dart';
 import 'Routes.dart';
 
@@ -78,5 +89,21 @@ class Screens {
     GetPage(name: Routes.shadowcolorcardpage, page: () => ShadowColorCardPage(),),
 
     GetPage(name: Routes.decoratedboxtransitionpage, page: () => DecoratedBoxTransitionPage(),),
+
+    GetPage(name: Routes.datatablepage, page: () => DataTablePage(),),
+
+    GetPage(name: Routes.dismissiblelistpage, page: () => DismissibleListPage(),),
+    GetPage(name: Routes.dismissiblestandartpage, page: () => DismissibleStandartPage(),),
+    GetPage(name: Routes.dismissiblepropertiespage, page: () => DismissiblePropertiesPage(),),
+
+    GetPage(name: Routes.drawerlistpage, page: () => DrawerListPage(),),
+    GetPage(name: Routes.standartdrawerpage, page: () => StandartDrawerPage(),),
+    GetPage(name: Routes.drawerrightpage, page: () => DrawerRightPage(),),
+    GetPage(name: Routes.drawercustomheaderpage, page: () => DrawerCustomHeaderPage(),),
+    GetPage(name: Routes.drawercustomshapepage, page: () => DrawerCustomShapePage(),),
+
+    GetPage(name: Routes.rotationtransitionpage, page: () => RotationTransitionPage(),),
+
+    GetPage(name: Routes.herowidgetpage, page: () => HeroWidgetPage(),),
   ];
 }
