@@ -19,6 +19,8 @@ import '../WidgetList_Screen/AnimatedItem/AnimatedCrossFade/AnimatedCrossFade2.d
 import '../WidgetList_Screen/AnimatedItem/AnimatedCrossFade/AnimatedCrossFadeListPage.dart';
 import '../WidgetList_Screen/AnimatedItem/AnimatedList.dart';
 import '../WidgetList_Screen/AnimatedItem/AnimatedPhysicalModel.dart';
+import '../WidgetList_Screen/ImageWidget/ImageWidgetPage.dart';
+import '../WidgetList_Screen/OpacityWidget/TextOpacityPage.dart';
 import '../WidgetList_Screen/RotationTransition/RotationTransitionPage.dart';
 import '../WidgetList_Screen/AnimatedItem/AnimatedSize.dart';
 import '../WidgetList_Screen/AnimatedItem/AnimatedWidget.dart';
@@ -41,6 +43,19 @@ import '../WidgetList_Screen/DrawerItem/DrawerListPage.dart';
 import '../WidgetList_Screen/DrawerItem/DrawerRight.dart';
 import '../WidgetList_Screen/DrawerItem/StandartDrawerPage.dart';
 import '../WidgetList_Screen/HeroWidget/HeroWidgetPage.dart';
+import '../WidgetList_Screen/SafeAreaWidget/SafeAreaWidgetListPage.dart';
+import '../WidgetList_Screen/SafeAreaWidget/WithSafeAreaPage.dart';
+import '../WidgetList_Screen/SafeAreaWidget/WithoutSafeAreaPage.dart';
+import '../WidgetList_Screen/ScaleTransition/ScaleTransitionWidget.dart';
+import '../WidgetList_Screen/SizeTransition/SizeTransitionPage.dart';
+import '../WidgetList_Screen/SnackBarWidget/FloatingSnackbarPage.dart';
+import '../WidgetList_Screen/SnackBarWidget/SnackBarColorPage.dart';
+import '../WidgetList_Screen/SnackBarWidget/SnackBarListPage.dart';
+import '../WidgetList_Screen/SnackBarWidget/SnackBarWithActionPage.dart';
+import '../WidgetList_Screen/SnackBarWidget/SnackBarWithDurationPage.dart';
+import '../WidgetList_Screen/SnackBarWidget/SnackBarWithMarginPage.dart';
+import '../WidgetList_Screen/SnackBarWidget/SnackBarwithShapePage.dart';
+import '../WidgetList_Screen/SnackBarWidget/StandartSnackBarPage.dart';
 import '../WidgetList_Screen/WidgetListPage.dart';
 import 'Routes.dart';
 
@@ -105,5 +120,27 @@ class Screens {
     GetPage(name: Routes.rotationtransitionpage, page: () => RotationTransitionPage(),),
 
     GetPage(name: Routes.herowidgetpage, page: () => HeroWidgetPage(),),
+
+    GetPage(name: Routes.imagewidgetpage, page: () => ImageWidgetPage(),),
+
+    GetPage(name: Routes.textopacitypage, page: () => TextOpacityPage(),),
+
+    GetPage(name: Routes.safeareawidgetlistpage, page: () => SafeAreaWidgetListPage(),),
+    GetPage(name: Routes.withoutsafeareapage, page: () => WithoutSafeAreaPage(),),
+    GetPage(name: Routes.withsafeareapage, page: () => WithSafeAreaPage(),),
+
+    GetPage(name: Routes.scaletransitionpage, page: () => ScaleTransitionPage(),),
+
+    GetPage(name: Routes.SizeTransitionPage, page: () => SizeTransitionPage(),),
+
+    GetPage(name: Routes.snackbarlistpage, page: () => SnackBarListPage(),),
+    GetPage(name: Routes.standartsnackbarpage, page: () => StandartSnackBarPage(),),
+    GetPage(name: Routes.snackbarcolorpage, page: () => SnackBarColorPage(),),
+    GetPage(name: Routes.snackbarwithactionpage, page: () => SnackBarWithActionPage(),),
+    GetPage(name: Routes.snackbarwithdurationpage, page: () => SnackBarWithDurationPage(),),
+    GetPage(name: Routes.floatingsnackbarpage, page: () => FloatingSnackbarPage(),),
+    GetPage(name: Routes.snackbarwithmarginpage, page: () => SnackBarWithMarginPage(),),
+    GetPage(name: Routes.snackbarwithshapepage, page: () => SnackBarwithShapePage(),),
+
   ];
 }

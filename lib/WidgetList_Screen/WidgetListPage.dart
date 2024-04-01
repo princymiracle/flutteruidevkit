@@ -24,6 +24,12 @@ class WidgetListPage extends StatelessWidget {
     "Drawer Widget",
     "Animated Rotation Transition",
     "Hero Widget",
+    "Image Widget",
+    "Opacity Widget",
+    "SafeArea Widget",
+    "Scale Transition",
+    "Size Transition",
+    "Snack Bar",
   ];
 
   @override
@@ -91,6 +97,24 @@ class WidgetListPage extends StatelessWidget {
                           case 14:
                             Get.toNamed(Routes.herowidgetpage);
                             break;
+                          case 15:
+                            Get.toNamed(Routes.imagewidgetpage);
+                            break;
+                          case 16:
+                            Get.toNamed(Routes.textopacitypage);
+                            break;
+                          case 17:
+                            Get.toNamed(Routes.safeareawidgetlistpage);
+                            break;
+                          case 18:
+                            Get.toNamed(Routes.scaletransitionpage);
+                            break;
+                          case 19:
+                            Get.toNamed(Routes.SizeTransitionPage);
+                            break;
+                          case 20:
+                            Get.toNamed(Routes.snackbarlistpage);
+                            break;
                         }
                       },
                       child: Container(width: 80.w,height: 8.h,
@@ -114,4 +138,4 @@ class WidgetListPage extends StatelessWidget {
     );
   }
 }
- // 39 40 42 43 46 48 51 52 53 54 56 57 61 62
+ //    54 56 57 61 62

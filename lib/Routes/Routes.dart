@@ -58,4 +58,25 @@ class Routes{
   static const rotationtransitionpage = '/rotationtransitionpage';
 
   static const herowidgetpage = '/herowidgetpage';
+
+  static const imagewidgetpage = '/imagewidgetpage';
+
+  static const textopacitypage = '/textopacitypage';
+
+  static const safeareawidgetlistpage = '/safeareawidgetlistpage';
+  static const withoutsafeareapage = '/withoutsafeareapage';
+  static const withsafeareapage = '/withsafeareapage';
+
+  static const scaletransitionpage = '/scaletransitionpage';
+
+  static const SizeTransitionPage = '/SizeTransitionPage';
+
+  static const snackbarlistpage = '/snackbarlistpage';
+  static const standartsnackbarpage = '/standartsnackbarpage';
+  static const snackbarcolorpage = '/snackbarcolorpage';
+  static const snackbarwithactionpage = '/snackbarwithactionpage';
+  static const snackbarwithdurationpage = '/snackbarwithdurationpage';
+  static const floatingsnackbarpage = '/floatingsnackbarpage';
+  static const snackbarwithmarginpage = '/snackbarwithmarginpage';
+  static const snackbarwithshapepage = '/snackbarwithshapepage';
 }
