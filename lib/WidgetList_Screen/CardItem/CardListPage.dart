@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
+import 'BorderRadiusCard.dart';
+import 'ElevationCard.dart';
+import 'ShadowColorCard.dart';
+import 'StandartCard.dart';
 
 
 class CardListPage extends StatelessWidget {
@@ -35,16 +39,16 @@ class CardListPage extends StatelessWidget {
                       onTap: () {
                         switch(index){
                           case 0:
-                            Get.toNamed(Routes.standartcardpage);
+                            Get.to(StandartCardPage(),);
                             break;
                           case 1:
-                            Get.toNamed(Routes.borderradiuscardpage);
+                            Get.to(BorderRadiusCardPage(),);
                             break;
                           case 2:
-                            Get.toNamed(Routes.elevationcardpage);
+                            Get.to(ElevationCardPage(),);
                             break;
                           case 3:
-                            Get.toNamed(Routes.shadowcolorcardpage);
+                            Get.to(ShadowColorCardPage(),);
                             break;
                         }
                       },

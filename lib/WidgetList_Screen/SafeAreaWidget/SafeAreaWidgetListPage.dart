@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
+import 'WithSafeAreaPage.dart';
+import 'WithoutSafeAreaPage.dart';
 
 class SafeAreaWidgetListPage extends StatelessWidget {
   String title;
@@ -32,10 +34,10 @@ class SafeAreaWidgetListPage extends StatelessWidget {
                       onTap: () {
                         switch(index){
                           case 0:
-                            Get.toNamed(Routes.withoutsafeareapage);
+                            Get.to(WithoutSafeAreaPage(),);
                             break;
                           case 1:
-                            Get.toNamed(Routes.withsafeareapage);
+                            Get.to(WithSafeAreaPage(),);
                             break;
                         }
                       },

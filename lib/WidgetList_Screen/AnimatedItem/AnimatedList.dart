@@ -74,10 +74,6 @@ class _AnimatedListPageState extends State<AnimatedListPage> {
                     onPressed: _addItem,
                     child: const Icon(Icons.add),
                   ),
-                  // IconButton(
-                  //     onPressed: _addItem,
-                  //     icon: Icon(Icons.add),
-                  // ),
                   Expanded(
                       child: AnimatedList(
                         key: _key,

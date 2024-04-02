@@ -77,7 +77,7 @@ class _DetailPageState extends State<DetailPage>  {
       ),
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: BoxDecoration(image: DecorationImage(image: AssetImage(ImagesPath.background),fit: BoxFit.cover)),
+          decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/bgImage.png"),fit: BoxFit.cover)),
           child: Container(
             child: Padding(
               padding:  EdgeInsets.only(top: 2.h, left: 5.w,right: 5.w),
@@ -93,7 +93,7 @@ class _DetailPageState extends State<DetailPage>  {
                   Center(
                     child: Hero(
                       tag: 'Background',
-                      child: Image.asset(ImagesPath.dropfilter,fit: BoxFit.cover,),
+                      child: Image.asset("assets/images/DropFilter.png",fit: BoxFit.cover,),
                     ),
                   ),
                 ],

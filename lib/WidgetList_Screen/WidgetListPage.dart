@@ -1,8 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-import '../../../Constants/ImagePath.dart';
-import '../Routes/Routes.dart';
+import 'AnimatedItem/AnimatedCrossFade/AnimatedCrossFadeListPage.dart';
+import 'AnimatedItem/AnimatedList.dart';
+import 'AnimatedItem/AnimatedOpacity.dart';
+import 'AnimatedItem/AnimatedPhysicalModel.dart';
+import 'AnimatedItem/AnimatedSize.dart';
+import 'AnimatedItem/AnimatedWidget.dart';
+import 'AnimatedItem/AnimateddeFaultTextstyle.dart';
+import 'AspectRatioItem/AspectRatio.dart';
+import 'CardItem/CardListPage.dart';
+import 'DataTable/DataTableWidget.dart';
+import 'DecoratedBoxTransition/DecoratedBoxTransitionPage.dart';
+import 'Dismissible/DismissibleListPage.dart';
+import 'DrawerItem/DrawerListPage.dart';
+import 'HeroWidget/HeroWidgetPage.dart';
+import 'ImageWidget/ImageWidgetPage.dart';
+import 'OpacityWidget/TextOpacityPage.dart';
+import 'RotationTransition/RotationTransitionPage.dart';
+import 'SafeAreaWidget/SafeAreaWidgetListPage.dart';
+import 'ScaleTransition/ScaleTransitionWidget.dart';
+import 'SizeTransition/SizeTransitionPage.dart';
+import 'SnackBarWidgetItem/SnackBarListPage.dart';
 
 class WidgetListPage extends StatelessWidget {
   String title;
@@ -42,7 +61,7 @@ class WidgetListPage extends StatelessWidget {
       ),
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: BoxDecoration(image: DecorationImage(image: AssetImage(ImagesPath.background),fit: BoxFit.cover)),
+          decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/bgImage.png"),fit: BoxFit.cover)),
           child: Padding( padding: EdgeInsets.all(5.w),
             child: Container(
               child:ListView.builder(
@@ -53,74 +72,87 @@ class WidgetListPage extends StatelessWidget {
                       onTap: () {
                         switch(index){
                           case 0:
-                            Get.toNamed(Routes.acrosslistpage);
+                            Get.to(ACrossListPage(),);
                             break;
                           case 1:
-                            Get.toNamed(Routes.animateddefaulttextstyle);
+                            Get.to(AnimatedDefaultPage(),);
                             break;
                           case 2:
-                            Get.toNamed(Routes.animatedlist);
+                            Get.to(AnimatedListPage());
                             break;
                           case 3:
-                            Get.toNamed(Routes.animatedopacity);
+                            Get.to(AnimatedOpacityPage(),);
                             break;
                           case 4:
-                            Get.toNamed(Routes.animatedephysicalmodel);
+                            Get.to(AnimatedPhysicalPage());
                             break;
                           case 5:
-                            Get.toNamed(Routes.animatedsizepage);
+                            Get.to(AnimatedSizePage(),);
                             break;
                           case 6:
-                            Get.toNamed(Routes.animatedwidgetpage);
+                            Get.to(AnimatedWidgetPage(),);
                             break;
                           case 7:
-                            Get.toNamed(Routes.aspectratiopage);
+                            Get.to(AspectRatioPage(),);
                             break;
                           case 8:
-                            Get.toNamed(Routes.cardlistpage);
+                            Get.to(CardListPage(),);
                             break;
                           case 9:
-                            Get.toNamed(Routes.decoratedboxtransitionpage);
+                            Get.to(DecoratedBoxTransitionPage(),);
                             break;
                           case 10:
-                            Get.toNamed(Routes.datatablepage);
+                            Get.to(DataTablePage(),);
                             break;
                           case 11:
-                            Get.toNamed(Routes.dismissiblelistpage);
+                            Get.to(DismissibleListPage(),);
                             break;
                           case 12:
-                            Get.toNamed(Routes.drawerlistpage);
+                            Get.to(DrawerListPage(),);
                             break;
                           case 13:
-                            Get.toNamed(Routes.rotationtransitionpage);
+                            Get.to(RotationTransitionPage(),);
                             break;
                           case 14:
-                            Get.toNamed(Routes.herowidgetpage);
+                            Get.to(HeroWidgetPage());
                             break;
                           case 15:
-                            Get.toNamed(Routes.imagewidgetpage);
+                            Get.to(ImageWidgetPage(),);
                             break;
                           case 16:
-                            Get.toNamed(Routes.textopacitypage);
+                            Get.to(TextOpacityPage(),);
                             break;
                           case 17:
-                            Get.toNamed(Routes.safeareawidgetlistpage);
+                            Get.to(SafeAreaWidgetListPage(),);
                             break;
                           case 18:
-                            Get.toNamed(Routes.scaletransitionpage);
+                            Get.to(ScaleTransitionPage(),);
                             break;
                           case 19:
-                            Get.toNamed(Routes.SizeTransitionPage);
+                            Get.to(SizeTransitionPage(),);
                             break;
                           case 20:
-                            Get.toNamed(Routes.snackbarlistpage);
+                            Get.to(SnackBarListPage(),);
                             break;
                         }
                       },
                       child: Container(width: 80.w,height: 8.h,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(2.w),
-                          image: DecorationImage(image: AssetImage(ImagesPath.conImg,), fit: BoxFit.fill,),),
+                            color: Colors.white60,
+                            borderRadius: BorderRadius.circular(2.w),
+                            border: Border.all(color: Color(0xFF4CCD99),),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Color(0xFF4CCD99).withOpacity(0.1),
+                                spreadRadius: 3,
+                                blurRadius: 10,
+                              ),
+                            ]
+                        ),
+                        // decoration: BoxDecoration(
+                        //   borderRadius: BorderRadius.circular(2.w),
+                        //   image: DecorationImage(image: AssetImage("assets/images/31.png"), fit: BoxFit.fill,),
+                        // ),
                         child: Center(
                           child: Text(
                             listData[index], style: TextStyle(color: Theme.of(context).secondaryHeaderColor,fontWeight: FontWeight.w600),

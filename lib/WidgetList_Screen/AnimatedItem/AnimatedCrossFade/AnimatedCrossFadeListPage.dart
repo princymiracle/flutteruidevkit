@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-import '../../../Routes/Routes.dart';
+import 'AnimatedCrossFade.dart';
+import 'AnimatedCrossFade2.dart';
 
 class ACrossListPage extends StatelessWidget {
   String title;
@@ -33,11 +34,10 @@ class ACrossListPage extends StatelessWidget {
                       onTap: () {
                         switch(index){
                           case 0:
-                           // Get.toNamed(Routes.animatedcrossfade);
-                          Get.toNamed(animatedcrossfade);
+                            Get.to(AnimatedCrossFadePage(),);
                             break;
                           case 1:
-                            Get.toNamed(Routes.animatedcrossfade2);
+                            Get.to(AnimatedCrossFadePage2(),);
                             break;
                         }
                       },

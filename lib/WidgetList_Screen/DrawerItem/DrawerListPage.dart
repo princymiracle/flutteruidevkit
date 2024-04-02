@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
+import 'DrawerCustomHeaderPage.dart';
+import 'DrawerCustomShapePage.dart';
+import 'DrawerRight.dart';
+import 'StandartDrawerPage.dart';
 
 class DrawerListPage extends StatelessWidget {
   String title;
@@ -34,23 +38,23 @@ class DrawerListPage extends StatelessWidget {
                       onTap: () {
                         switch(index){
                           case 0:
-                            Get.toNamed(Routes.standartdrawerpage);
+                            Get.to(StandartDrawerPage(),);
                             break;
                           case 1:
-                            Get.toNamed(Routes.drawerrightpage);
+                            Get.to(DrawerRightPage(),);
                             break;
                           case 2:
-                            Get.toNamed(Routes.drawercustomheaderpage);
+                            Get.to(DrawerCustomHeaderPage(),);
                             break;
                           case 3:
-                            Get.toNamed(Routes.drawercustomshapepage);
+                            Get.to(DrawerCustomShapePage(),);
                             break;
                         }
                       },
                       child: Container(width: 80.w,height: 8.h,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(2.w),
-                          image: DecorationImage(image: AssetImage(ImagesPath.conImg,), fit: BoxFit.fill,),),
+                          image: DecorationImage(image: AssetImage("assets/images/31.png"), fit: BoxFit.fill,),),
                         child: Center(
                           child: Text(
                             listData[index], style: TextStyle(color: Theme.of(context).secondaryHeaderColor,fontWeight: FontWeight.w600),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
+import 'DismissiblePropertiesPage.dart';
+import 'DismissibleStandartPage.dart';
 
 
 class DismissibleListPage extends StatelessWidget {
@@ -33,10 +35,10 @@ class DismissibleListPage extends StatelessWidget {
                       onTap: () {
                         switch(index){
                           case 0:
-                            Get.toNamed(Routes.dismissiblestandartpage);
+                            Get.to(DismissibleStandartPage(),);
                             break;
                           case 1:
-                            Get.toNamed(Routes.dismissiblepropertiespage);
+                            Get.to(DismissiblePropertiesPage(),);
                             break;
                         }
                       },

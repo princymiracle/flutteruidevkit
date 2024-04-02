@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
+import 'FloatingSnackbarPage.dart';
+import 'SnackBarColorPage.dart';
+import 'SnackBarWithActionPage.dart';
+import 'SnackBarWithMarginPage.dart';
+import 'SnackBarwithShapePage.dart';
+import 'StandartSnackBarPage.dart';
 
 class SnackBarListPage extends StatelessWidget {
   String title;
@@ -36,22 +42,22 @@ class SnackBarListPage extends StatelessWidget {
                       onTap: () {
                         switch(index){
                           case 0:
-                            Get.toNamed(Routes.standartsnackbarpage);
+                            Get.to(StandartSnackBarPage(),);
                             break;
                           case 1:
-                            Get.toNamed(Routes.snackbarcolorpage);
+                            Get.to(SnackBarColorPage(),);
                             break;
                           case 2:
-                            Get.toNamed(Routes.snackbarwithactionpage);
+                            Get.to(SnackBarWithActionPage(),);
                             break;
                           case 3:
-                            Get.toNamed(Routes.floatingsnackbarpage);
+                            Get.to(FloatingSnackbarPage(),);
                             break;
                           case 4:
-                            Get.toNamed(Routes.snackbarwithmarginpage);
+                            Get.to(SnackBarWithMarginPage(),);
                             break;
                           case 5:
-                            Get.toNamed(Routes.snackbarwithshapepage);
+                            Get.to(SnackBarwithShapePage(),);
                             break;
                         }
                       },
