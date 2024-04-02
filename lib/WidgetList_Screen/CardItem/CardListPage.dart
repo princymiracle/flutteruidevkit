@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-import '../../../Constants/ImagePath.dart';
-import '../../Routes/Routes.dart';
+
 
 class CardListPage extends StatelessWidget {
   String title;
@@ -25,7 +24,7 @@ class CardListPage extends StatelessWidget {
       ),
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: BoxDecoration(image: DecorationImage(image: AssetImage(ImagesPath.background),fit: BoxFit.cover)),
+          decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/bgImage.png"),fit: BoxFit.cover)),
           child: Padding( padding: EdgeInsets.all(5.w),
             child: Container(
               child:ListView.builder(
@@ -52,7 +51,7 @@ class CardListPage extends StatelessWidget {
                       child: Container(width: 80.w,height: 8.h,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(2.w),
-                          image: DecorationImage(image: AssetImage(ImagesPath.conImg,), fit: BoxFit.fill,),),
+                          image: DecorationImage(image: AssetImage("assets/images/31.png"), fit: BoxFit.fill,),),
                         child: Center(
                           child: Text(
                             listData[index], style: TextStyle(color: Theme.of(context).secondaryHeaderColor,fontWeight: FontWeight.w600),

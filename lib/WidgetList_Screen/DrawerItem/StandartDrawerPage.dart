@@ -1,24 +1,7 @@
-// import 'package:flutter/material.dart';
-//
-// class StandartDrawerPage extends StatefulWidget {
-//   const StandartDrawerPage({super.key});
-//
-//   @override
-//   State<StandartDrawerPage> createState() => _StandartDrawerPageState();
-// }
-//
-// class _StandartDrawerPageState extends State<StandartDrawerPage> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return const Placeholder();
-//   }
-// }
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:sizer/sizer.dart';
+
 
 class StandartDrawerPage extends StatefulWidget {
   String title;

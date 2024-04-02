@@ -1,23 +1,6 @@
-// import 'package:flutter/material.dart';
-//
-// class DismissiblePropertiesPage extends StatefulWidget {
-//   const DismissiblePropertiesPage({super.key});
-//
-//   @override
-//   State<DismissiblePropertiesPage> createState() => _DismissiblePropertiesPageState();
-// }
-//
-// class _DismissiblePropertiesPageState extends State<DismissiblePropertiesPage> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return const Placeholder();
-//   }
-// }
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-import '../../Constants/ImagePath.dart';
 
 class DismissiblePropertiesPage extends StatefulWidget {
   String title;
@@ -41,7 +24,7 @@ class _DismissiblePropertiesPageState extends State<DismissiblePropertiesPage>  
       ),
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: BoxDecoration(image: DecorationImage(image: AssetImage(ImagesPath.background),fit: BoxFit.cover)),
+          decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/bgImage.png"),fit: BoxFit.cover)),
           child: SingleChildScrollView(
             child: Container(
               child: Padding(

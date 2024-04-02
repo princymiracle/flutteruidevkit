@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutteruidevkit/Constants/ImagePath.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
@@ -28,7 +27,7 @@ class _AnimatedCrossFadePageState extends State<AnimatedCrossFadePage> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagesPath.background,fit: BoxFit.cover,height: double.infinity,),
+            Image.asset("assets/images/bgImage.png",fit: BoxFit.cover,height: double.infinity,),
             Padding(
               padding:  EdgeInsets.only(left: 5.w,right: 5.w),
               child: Container(

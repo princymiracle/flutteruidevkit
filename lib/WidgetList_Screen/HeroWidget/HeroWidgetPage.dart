@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../Constants/ImagePath.dart';
 
 class HeroWidgetPage extends StatefulWidget {
   String title;
@@ -24,7 +23,7 @@ class _HeroWidgetPageState extends State<HeroWidgetPage>  {
       ),
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: BoxDecoration(image: DecorationImage(image: AssetImage(ImagesPath.background),fit: BoxFit.cover)),
+          decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/bgImage.png"),fit: BoxFit.cover)),
           child: Container(
             child: Padding(
               padding:  EdgeInsets.only(top: 2.h, left: 5.w,right: 5.w),
@@ -44,7 +43,7 @@ class _HeroWidgetPageState extends State<HeroWidgetPage>  {
                       },
                       child: Hero(
                         tag: 'Background',
-                          child: Image.asset(ImagesPath.dropfilter,fit: BoxFit.cover,height: 10.h,width: 20.w,),
+                          child: Image.asset("assets/images/DropFilter.png",fit: BoxFit.cover,height: 10.h,width: 20.w,),
                       ),
                     ),
                   ),

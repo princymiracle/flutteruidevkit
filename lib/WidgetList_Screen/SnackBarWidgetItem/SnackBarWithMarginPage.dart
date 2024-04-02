@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:sizer/sizer.dart';
-
-import '../../Constants/ImagePath.dart';
 
 class SnackBarWithMarginPage extends StatefulWidget {
   String title;
@@ -25,7 +22,7 @@ class _SnackBarWithMarginPageState extends State<SnackBarWithMarginPage> {
       ),
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: BoxDecoration(image: DecorationImage(image: AssetImage(ImagesPath.background),fit: BoxFit.cover)),
+          decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/bgImage.png"),fit: BoxFit.cover)),
           child: Container(
             child: Padding(
               padding:  EdgeInsets.only(top: 2.h, left: 5.w,right: 5.w),
@@ -48,12 +45,7 @@ class _SnackBarWithMarginPageState extends State<SnackBarWithMarginPage> {
                         margin: EdgeInsets.all(55),
                       );
                       ScaffoldMessenger.of(context).showSnackBar(snackdemo);
-
-                      // 'showSnackBar' is deprecated and shouldn't be used.
-                      //Use ScaffoldMessenger.showSnackBar.
-                      // Scaffold.of(context).showSnackBar(snackdemo);
-                    },
-
+                      },
                     child:Text("Show Floating Snackbar With Margin"),
                   ),
                 ],

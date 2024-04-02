@@ -1,24 +1,6 @@
-// import 'package:flutter/material.dart';
-//
-// class ScaleTransitionPage extends StatefulWidget {
-//   const ScaleTransitionPage({super.key});
-//
-//   @override
-//   State<ScaleTransitionPage> createState() => _ScaleTransitionPageState();
-// }
-//
-// class _ScaleTransitionPageState extends State<ScaleTransitionPage> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return const Placeholder();
-//   }
-// } Scale Transition
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-
-import '../../../Constants/ImagePath.dart';
 
 class ScaleTransitionPage extends StatefulWidget {
   String title;
@@ -56,7 +38,7 @@ class _ScaleTransitionPageState extends State<ScaleTransitionPage> with TickerPr
       ),
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: BoxDecoration(image: DecorationImage(image: AssetImage(ImagesPath.background),fit: BoxFit.cover)),
+          decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/bgImage.png"),fit: BoxFit.cover)),
           child: Container(
             child: Padding(
               padding:  EdgeInsets.only(top: 2.h, left: 5.w,right: 5.w),
@@ -72,7 +54,7 @@ class _ScaleTransitionPageState extends State<ScaleTransitionPage> with TickerPr
                   Center(
                     child: ScaleTransition(
                       scale: _animation,
-                      child: Image.asset(ImagesPath.dropfilter,fit: BoxFit.cover,height: 25.h,width: 50.w,),
+                      child: Image.asset("assets/images/DropFilter.png",fit: BoxFit.cover,height: 25.h,width: 50.w,),
                     ),
                   ),
                 ],

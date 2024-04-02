@@ -1,23 +1,4 @@
-// import 'package:flutter/material.dart';
-//
-// class WithSafeAreaPage extends StatefulWidget {
-//   const WithSafeAreaPage({super.key});
-//
-//   @override
-//   State<WithSafeAreaPage> createState() => _WithSafeAreaPageState();
-// }
-//
-// class _WithSafeAreaPageState extends State<WithSafeAreaPage> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return const Placeholder();
-//   }
-// }
-
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:sizer/sizer.dart';
-import '../../Constants/ImagePath.dart';
 
 class WithSafeAreaPage extends StatefulWidget {
   String title;

@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../Constants/ImagePath.dart';
-
 class ImageWidgetPage extends StatefulWidget {
   String title;
   ImageWidgetPage({super.key,this.title = 'Image Widget'});
@@ -24,7 +22,7 @@ class _ImageWidgetPageState extends State<ImageWidgetPage>  {
       ),
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: BoxDecoration(image: DecorationImage(image: AssetImage(ImagesPath.background),fit: BoxFit.cover)),
+          decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/bgImage.png"),fit: BoxFit.cover)),
           child: Container(
             child: Padding(
               padding:  EdgeInsets.only(top: 2.h, left: 5.w,right: 5.w),
@@ -40,7 +38,7 @@ class _ImageWidgetPageState extends State<ImageWidgetPage>  {
                     SizedBox(height: 5.h,),
                     Text("Image from assets"),
                     SizedBox(height: 2.h,),
-                    Image.asset(ImagesPath.dropfilter,fit: BoxFit.cover,height: 25.h,width: 50.w,),
+                    Image.asset("assets/images/DropFilter.png",fit: BoxFit.cover,height: 25.h,width: 50.w,),
                     SizedBox(height: 4.h,),
                     Text("Image from network with cache image"),
                     SizedBox(height: 2.h,),
@@ -56,7 +54,7 @@ class _ImageWidgetPageState extends State<ImageWidgetPage>  {
                           borderRadius: BorderRadius.circular(30),
                           image: DecorationImage(
                             fit: BoxFit.cover,
-                             image: AssetImage( ImagesPath.dropfilter),
+                             image: AssetImage("assets/images/DropFilter.png"),
                           ),
                           boxShadow: [
                             BoxShadow(
