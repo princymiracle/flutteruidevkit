@@ -48,14 +48,13 @@ import '../WidgetList_Screen/SafeAreaWidget/WithSafeAreaPage.dart';
 import '../WidgetList_Screen/SafeAreaWidget/WithoutSafeAreaPage.dart';
 import '../WidgetList_Screen/ScaleTransition/ScaleTransitionWidget.dart';
 import '../WidgetList_Screen/SizeTransition/SizeTransitionPage.dart';
-import '../WidgetList_Screen/SnackBarWidget/FloatingSnackbarPage.dart';
-import '../WidgetList_Screen/SnackBarWidget/SnackBarColorPage.dart';
-import '../WidgetList_Screen/SnackBarWidget/SnackBarListPage.dart';
-import '../WidgetList_Screen/SnackBarWidget/SnackBarWithActionPage.dart';
-import '../WidgetList_Screen/SnackBarWidget/SnackBarWithDurationPage.dart';
-import '../WidgetList_Screen/SnackBarWidget/SnackBarWithMarginPage.dart';
-import '../WidgetList_Screen/SnackBarWidget/SnackBarwithShapePage.dart';
-import '../WidgetList_Screen/SnackBarWidget/StandartSnackBarPage.dart';
+import '../WidgetList_Screen/SnackBarWidgetItem/FloatingSnackbarPage.dart';
+import '../WidgetList_Screen/SnackBarWidgetItem/SnackBarColorPage.dart';
+import '../WidgetList_Screen/SnackBarWidgetItem/SnackBarListPage.dart';
+import '../WidgetList_Screen/SnackBarWidgetItem/SnackBarWithActionPage.dart';
+import '../WidgetList_Screen/SnackBarWidgetItem/SnackBarWithMarginPage.dart';
+import '../WidgetList_Screen/SnackBarWidgetItem/SnackBarwithShapePage.dart';
+import '../WidgetList_Screen/SnackBarWidgetItem/StandartSnackBarPage.dart';
 import '../WidgetList_Screen/WidgetListPage.dart';
 import 'Routes.dart';
 
@@ -137,7 +136,6 @@ class Screens {
     GetPage(name: Routes.standartsnackbarpage, page: () => StandartSnackBarPage(),),
     GetPage(name: Routes.snackbarcolorpage, page: () => SnackBarColorPage(),),
     GetPage(name: Routes.snackbarwithactionpage, page: () => SnackBarWithActionPage(),),
-    GetPage(name: Routes.snackbarwithdurationpage, page: () => SnackBarWithDurationPage(),),
     GetPage(name: Routes.floatingsnackbarpage, page: () => FloatingSnackbarPage(),),
     GetPage(name: Routes.snackbarwithmarginpage, page: () => SnackBarWithMarginPage(),),
     GetPage(name: Routes.snackbarwithshapepage, page: () => SnackBarwithShapePage(),),

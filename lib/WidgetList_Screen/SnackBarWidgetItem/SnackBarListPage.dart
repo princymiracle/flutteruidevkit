@@ -12,7 +12,6 @@ class SnackBarListPage extends StatelessWidget {
     "Standart SnackBar",
     "SnackBar Color",
     "SnackBar With Action",
-    "SnackBar With Duration",
     "Floating Snackbar",
     "SnackBar With Margin",
     "SnackBar with Shape",
@@ -48,15 +47,12 @@ class SnackBarListPage extends StatelessWidget {
                             Get.toNamed(Routes.snackbarwithactionpage);
                             break;
                           case 3:
-                            Get.toNamed(Routes.snackbarwithdurationpage);
-                            break;
-                          case 4:
                             Get.toNamed(Routes.floatingsnackbarpage);
                             break;
-                          case 5:
+                          case 4:
                             Get.toNamed(Routes.snackbarwithmarginpage);
                             break;
-                          case 6:
+                          case 5:
                             Get.toNamed(Routes.snackbarwithshapepage);
                             break;
                         }

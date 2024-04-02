@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../../Constants/ImagePath.dart';
+import '../../Constants/ImagePath.dart';
 
-class StandartSnackBarPage extends StatefulWidget {
+class SnackBarWithMarginPage extends StatefulWidget {
   String title;
-  StandartSnackBarPage({super.key,this.title = 'Standart SnackBar'});
+  SnackBarWithMarginPage({super.key,this.title = 'SnackBar With Margin'});
+
 
   @override
-  State<StandartSnackBarPage> createState() => _StandartSnackBarPageState();
+  State<SnackBarWithMarginPage> createState() => _SnackBarWithMarginPageState();
 }
 
-class _StandartSnackBarPageState extends State<StandartSnackBarPage> {
-
+class _SnackBarWithMarginPageState extends State<SnackBarWithMarginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,17 +32,29 @@ class _StandartSnackBarPageState extends State<StandartSnackBarPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("SizeTransition",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.bold),),
+                  Text("SnackBar With Margin",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.bold),),
                   SizedBox(height: 1.h,),
-                  Text("This is the example of SizeTransition",style: TextStyle(color: Colors.grey),),
+                  Text("This is the example of SnackBar With Margin",style: TextStyle(color: Colors.grey),),
                   SizedBox(height: 1.h,),
                   Text("Example :-"),
                   SizedBox(height: 5.h,),
                   ElevatedButton(
                     onPressed: () {
-                      
+                      const snackdemo = SnackBar(
+                        content: Text('SnackBar With Margin bottom'),
+                        backgroundColor: Colors.blue,
+                        elevation: 10,
+                        behavior: SnackBarBehavior.floating,
+                        margin: EdgeInsets.all(55),
+                      );
+                      ScaffoldMessenger.of(context).showSnackBar(snackdemo);
+
+                      // 'showSnackBar' is deprecated and shouldn't be used.
+                      //Use ScaffoldMessenger.showSnackBar.
+                      // Scaffold.of(context).showSnackBar(snackdemo);
                     },
-                    child: Text("Show Snackbar"),
+
+                    child:Text("Show Floating Snackbar With Margin"),
                   ),
                 ],
               ),
@@ -52,4 +65,3 @@ class _StandartSnackBarPageState extends State<StandartSnackBarPage> {
     );
   }
 }
-
